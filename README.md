@@ -1,5 +1,5 @@
 # pywid-csv
-Script to instantly graph and visualize any two variables from a CSV, specifically, the OWID COVID19 CSV.
+Script to instantly graph and visualize any two variables from a CSV, specifically, the OWID COVID-19 CSV.
 
 ---
 
@@ -16,7 +16,7 @@ You're sections headers will be used to reference location of destination.
 
 ## Description
 
-Creating ReadMe's for your Github repository can be tedious.  I hope this template can save you time and effort as well as provide you with some consistency across your projects.
+This tool was created to facilitate the process of graphing two variables from the "Our World in Data" COVID-19 .csv reports. It comes with a plethora of options and parameters that allow for further customization of the output graph. With this tool, you could (for example) quickly visualize the effect of COVID-19 on every country as of today, or visualize the effect on a specific country through time.
 
 #### Technologies
 
@@ -29,14 +29,17 @@ Creating ReadMe's for your Github repository can be tedious.  I hope this templa
 
 ## How To Use
 
-#### Installation
-
+#### Requirements
+Matplotlib and you're ready to start graphing!
+```html
+    pip3 install matplotlib
+```
 
 
 #### API Reference
 
 ```html
-    <p>dummy code</p>
+    dummy code
 ```
 [Back To The Top](#read-me-template)
 
@@ -81,5 +84,3 @@ SOFTWARE.
 - Website - [James Q Quick](https://jamesqquick.com)
 
 [Back To The Top](#read-me-template)
-
-Let's take a look at the 
