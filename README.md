@@ -1,5 +1,5 @@
 # pywid-csv
-Script to instantly graph and visualize any two variables from a CSV, specifically, the OWID COVID-19 CSV.
+Two tools to graph, sort and parse through CSV files. Specifically designed around the OWID COVID-19 CSV.
 
 ---
 
@@ -23,7 +23,7 @@ This tool was created to facilitate the process of graphing two variables from t
 - Technology 1
 - Technology 2
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#pywid-csv)
 
 ---
 
