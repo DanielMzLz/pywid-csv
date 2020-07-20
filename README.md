@@ -11,7 +11,7 @@ You're sections headers will be used to reference location of destination.
     - [Requirements](#requirements)
     - [pywid-graph](#pywid-graph)
     - [pywid-parse](#pywid-parse)
-- [References](#references)
+- [Notes](#notes)
 - [License](#license)
 - [Author Info](#author-info)
 
@@ -84,7 +84,7 @@ Recommended sorting methods are:
 
 So, let's start with the basics: Suppose you wish to analyze the worldwide relationship between the percentage of populations that are aged 65 or older and the total amount of deaths. With ```pywid-graph.py```, you'd do:
 ```html
-python3 pywid-graph aged_65_older total_deaths
+python3 pywid-graph.py aged_65_older total_deaths
 ```
 That'll return something like this:
 
@@ -95,7 +95,7 @@ That'll return something like this:
 Now we know that there is no linear correlation between these two variables! But who's that one guy really far on the right? Let's label the points to find out!
 
 ```html
-python3 pywid-graph aged_65_older total_deaths --include_label iso_code
+python3 pywid-graph.py aged_65_older total_deaths --include_label iso_code
 ```
 
 <p align="center">
@@ -105,7 +105,7 @@ python3 pywid-graph aged_65_older total_deaths --include_label iso_code
 With this information, we can now tell that it is Japan that has the highest percentage of people aged 65 or older in the world! Even so, they have still been able to maintain a low amount of total deaths. Let's try and analyze how Japan has faired when compared to the entirety of the world:
 
 ```html
-python3 pywid-graph aged_65_older total_deaths --include_label iso_code --world
+python3 pywid-graph.py aged_65_older total_deaths --include_label iso_code --world
 ```
 
 <p align="center">
@@ -115,7 +115,7 @@ python3 pywid-graph aged_65_older total_deaths --include_label iso_code --world
 We can see that Japan is minimized even more when the entirety of the world is factored in. Cool! Let's try and analyze how the landscape looked during the early stages of the pandemic, say the second of February. 
 
 ```html
-python3 pywid-graph aged_65_older total_deaths --include_label iso_code --world --sort date 2020-02-02
+python3 pywid-graph.py aged_65_older total_deaths --include_label iso_code --world --sort date 2020-02-02
 ```
 
 <p align="center">
@@ -125,7 +125,7 @@ python3 pywid-graph aged_65_older total_deaths --include_label iso_code --world 
 Here we can appreciate a very different landscape. China leads the majority of the unfortunate passings, while their prevalence seems to be rising in Iran, Korea, and Italy; Japan seems to remain unchanged, but we can be sure that they haven't been unaffected by the pandemic. Let's take a closer look at how they have faired through the pandemic by changing our sorting type. Of course, we should change the x-axis to reflect change over time (dates), and we can remove the world from the graph. We could also declutter the graph from the labels, as it is obvious every point will be labeled as Japan; alternatively, we could label the points with the respective dates. We will do the former:
 
 ```html
-python3 pywid-graph date total_deaths --sort iso_code JPN
+python3 pywid-graph.py date total_deaths --sort iso_code JPN
 ```
 
 <p align="center">
@@ -138,10 +138,10 @@ Now, we can see that Japan did struggle at first with the pandemic, but has been
 This is all very interesting and everything, but we haven't been saving any of these graphs for later use! Let's do that with ```-O```. Let's also specify a name for this graph.
 
 ```html
-python3 pywid-graph date total_deaths --sort iso_code JPN -O japans-response.png
+python3 pywid-graph.py date total_deaths --sort iso_code JPN -O japans-response.png
 ```
 
-With that, you have become an expert with this tool! Good on you!
+With that, you have become an expert with this tool! Good job!
 
 ### pywid-parse
 ```html
@@ -176,13 +176,37 @@ Recommended sorting methods are:
 - ```-O``` is used to change the name of the output file. If not specified, it will be saved as ```owid_simplified.csv```.
 
 #### Examples
-This tool really is meant to extract specific values out of any CSV, with special accomodations for the OWID CSV.
+This tool really is meant to extract specific values out of any CSV, with special accomodations for the OWID CSV. To retrieve specific columns from the file, say location, total cases and total deaths, you'd do:
+
+```html
+python3 pywid-parse.py location total_cases total_deaths
+```
+
+Voilà! You now have a file called ```owid_simplified.csv``` that contains every country with their respective total cases and deaths. If you'd also like to include the world total, you would now do:
+
+```html
+python3 pywid-parse.py location total_cases total_deaths -W
+```
+
+This will return the same file but now including the world total. This is all good if you want to analyze the pandemic worldwide, but what if you'd prefer to analyze the pandemic on a specific country? To get those results for, say, the United States, you could do:
+
+```html
+python3 pywid-parse.py location date total_cases total_deaths --sort iso_code USA
+```
+
+The location of these results can be modified by doing:
+
+```html
+python3 pywid-parse.py location date total_cases total_deaths --sort iso_code USA -O my_new_file.csv
+```
 
 [Back To The Top](#pywid-csv)
 
 ---
 
-## References
+## Notes
+- Importing a file will handle exactly the same as if the default file was imported, it'll just utilize the different source.
+- If 
 [Back To The Top](#pywid-csv)
 
 ---
