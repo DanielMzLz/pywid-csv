@@ -7,8 +7,8 @@ Two tools to graph, sort and parse through CSV files. Specifically designed arou
 You're sections headers will be used to reference location of destination.
 
 - [Description](#description)
+- [How to Use](#how-to-use)
     - [Built With](#pywid-graph.py)
-- [Requirements](#how-to-use)
 - [References](#references)
 - [License](#license)
 - [Author Info](#author-info)
