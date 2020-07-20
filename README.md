@@ -86,7 +86,13 @@ So, let's start with the basics: Suppose you wish to analyze the worldwide relat
 ```html
 python3 pywid-graph aged_65_older total_deaths
 ```
+That'll return something like this:
 
+<p align="center">
+    <img src=https://user-images.githubusercontent.com/39423011/87971430-f3a20280-ca8a-11ea-8190-61c82ce48064.png width="350" title="graph.png">
+</p>
+
+Now we know that there is no linear correlation between these two variables! But who's that one guy really far on the right? Let's label the points
 [Back To The Top](#pywid-csv)
 
 ---
