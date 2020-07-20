@@ -1,5 +1,5 @@
 # pywid-csv
-Two tools to graph, sort and parse through CSV files. Specifically designed around the OWID COVID-19 CSV. Made in Python 3.
+Two tools to graph, sort and parse through CSV files. Specifically designed around the "Our World in Data" COVID-19 CSV. Made in Python 3.
 
 ---
 
