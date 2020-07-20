@@ -73,7 +73,7 @@ Recommended sorting methods are:
   iso_code      <iso>
 ```
 
-- ```pywid-graph.py``` expects exactly two fields to be entered as argument A, so that each field can correspond to an x or y axis. 
+- ```pywid-graph.py``` expects exactly two fields to be entered as argument A, so that each field can correspond to an x or y axis.
 - An additional field can be entered as a ```-I```, an independent label for each of the points graphed. 
 - To help you change the underlying functionality of the grapher, you can utilize the ```--sort``` arguments. By default, the graph will retrieve entries by date and those that match today's date. To change whichever day you wish to match, say, you want to match the first of January 2020, you'd do ```--sort date 2020-01-01```. To change from date altogether and graph the values of a specific country, you'd do ```--sort iso_code USA```. These two are the recommended sorting methods, but there are no restrictions on what can classify as a sorting method. The sorting itself hinges on the ```type``` value matching the given ```filter``` for each entry.
 - As mentioned, this tool can also utilize other CSV files, with the help of the ```-F``` argument. 
@@ -142,6 +142,41 @@ python3 pywid-graph date total_deaths --sort iso_code JPN -O japans-response.png
 ```
 
 With that, you have become an expert with this tool! Good on you!
+
+### pywid-parse
+```html
+usage: python3 pywid-parse.py A [options]
+
+positional arguments:
+  A                     The fields to be sorted.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -S <type> <filter>, --sort <type> <filter>
+                        Sorting method to be used. Default is 'date today.'
+  -F <file>, --file <file>
+                        Use a local file instead of the repository.
+  -W, --world           Include world in results.
+  -O <file>, --output <file>
+                        Select name/path for output file.
+
+All possible (default) fields are:
+['iso_code', 'continent', 'location', 'date', 'total_cases', 'new_cases', 'total_deaths', 'new_deaths', 'total_cases_per_million', 'new_cases_per_million', 'total_deaths_per_million', 'new_deaths_per_million', 'total_tests', 'new_tests', 'total_tests_per_thousand', 'new_tests_per_thousand', 'new_tests_smoothed', 'new_tests_smoothed_per_thousand', 'tests_units', 'stringency_index', 'population', 'population_density', 'median_age', 'aged_65_older', 'aged_70_older', 'gdp_per_capita', 'extreme_poverty', 'cvd_death_rate', 'diabetes_prevalence', 'female_smokers', 'male_smokers', 'handwashing_facilities', 'hospital_beds_per_thousand', 'life_expectancy']
+
+Recommended sorting methods are:
+  date          <yyyy-mm-dd OR 'today'>
+  iso_code      <iso>
+```
+
+```pywid-parse``` follows mostly in the footsteps of the grapher with a few exceptions.
+- ```pywid-parse.py``` can take in an unlimited amount of values for argument A. These arguments will be included in the output CSV file.
+- To help you change the underlying functionality of the parser, you can utilize the ```--sort``` arguments. By default, the graph will retrieve entries by date and those that match today's date. To change whichever day you wish to match, say, you want to match the first of January 2020, you'd do ```--sort date 2020-01-01```. To change from date altogether and graph the values of a specific country, you'd do ```--sort iso_code USA```. These two are the recommended sorting methods, but there are no restrictions on what can classify as a sorting method. The sorting itself hinges on the ```type``` value matching the given ```filter``` for each entry.
+- As mentioned, this tool can also utilize other CSV files, with the help of the ```-F``` argument. 
+- The "World" entry is naturally excluded for every output. If one wishes to override this behavior, it can be done so with the help of the ```-W``` argument.
+- ```-O``` is used to change the name of the output file. If not specified, it will be saved as ```owid_simplified.csv```.
+
+#### Examples
+
 
 [Back To The Top](#pywid-csv)
 
