@@ -242,9 +242,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 If possible, consider supporting to one of the following causes:
 - [Our World in Data](https://ourworldindata.org/donate)
 - [Federal Emergency Management Agency](https://www.fema.gov/coronavirus/how-to-help)
-- [The National Domestic Workers' Alliance](https://secure.actblue.com/donate/coronavirus-care-fund?refcode=covidfundwebpage)
+- [The National Domestic Workers Alliance](https://secure.actblue.com/donate/coronavirus-care-fund?refcode=covidfundwebpage)
 
-If you are unable to donate money, consider donating blood or plasma to one of the following organizations or your local bank.
+If you are unable to donate money, consider donating blood or plasma to your local bank or one of the following organizations:
 - [Advancing Transfusion and Cellular Therapies Worldwide](http://www.aabb.org/tm/donation/Pages/Blood-Bank-Locator.aspx)
 - [American Red Cross](https://www.redcrossblood.org/donate-blood/dlp/plasma-donations-from-recovered-covid-19-patients.html#donorform)
 
