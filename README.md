@@ -1,5 +1,5 @@
 # pywid-csv
-Two tools to graph, sort and parse through CSV files. Specifically designed around the OWID COVID-19 CSV.
+Two tools to graph, sort and parse through CSV files. Specifically designed around the OWID COVID-19 CSV. Made in Python 3.
 
 ---
 
@@ -42,34 +42,35 @@ Matplotlib and you're ready to start graphing!
 
 #### Usage
 
-Let's take a look at the ```--help``` page, shall we?
+Let's take a look at the respective ```--help``` pages, shall we?
 
+#### pywid-graph.py
 ```html
-usage: pywid.py F [options]
+usage: python3 pywid-graph.py A [options]
 
 positional arguments:
-  F                     The fields to be sorted, in x y format.
+  A                     The fields to be sorted, in x y format.
 
 optional arguments:
   -h, --help            show this help message and exit
   -I <label>, --include_label <label>
                         Choose an extra field to label the points.
-  -L <file>, --file <file>
+  -F <file>, --file <file>
                         Use a local file instead of the repository.
   -W, --world           Include world in results.
   -S <type> <filter>, --sort <type> <filter>
                         Sorting method to be used. Default is 'date today.'
-  -O [<file>], --output [<file>]
+  -O [file], --output [file]
                         Output the graph to a file, in PNG format.
 
 All possible (default) fields are:
 ['iso_code', 'continent', 'location', 'date', 'total_cases', 'new_cases', 'total_deaths', 'new_deaths', 'total_cases_per_million', 'new_cases_per_million', 'total_deaths_per_million', 'new_deaths_per_million', 'total_tests', 'new_tests', 'total_tests_per_thousand', 'new_tests_per_thousand', 'new_tests_smoothed', 'new_tests_smoothed_per_thousand', 'tests_units', 'stringency_index', 'population', 'population_density', 'median_age', 'aged_65_older', 'aged_70_older', 'gdp_per_capita', 'extreme_poverty', 'cvd_death_rate', 'diabetes_prevalence', 'female_smokers', 'male_smokers', 'handwashing_facilities', 'hospital_beds_per_thousand', 'life_expectancy', 'random']
 
 Recommended sorting methods are:
-  date          [yyyy-mm-dd OR 'today']
-  iso_code      [iso]
-
+  date          <yyyy-mm-dd OR 'today'>
+  iso_code      <iso>
 ```
+
 [Back To The Top](#pywid-csv)
 
 ---
