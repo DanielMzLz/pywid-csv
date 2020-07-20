@@ -132,7 +132,16 @@ python3 pywid-graph date total_deaths --sort iso_code JPN
     <img src=https://user-images.githubusercontent.com/39423011/87982635-b2b2e980-ca9c-11ea-8a4b-46fa2ac205f6.png width="350" title="graph.png">
 </p>
 
-We can 
+Now, we can see that Japan did struggle at first with the pandemic, but has been able to maintain the total deaths under a thousand.
+
+
+This is all very interesting and everything, but we haven't been saving any of these graphs for later use! Let's do that with ```-O```. Let's also specify a name for this graph.
+
+```html
+python3 pywid-graph date total_deaths --sort iso_code JPN -O japans-responje.png
+```
+
+With that, you have become an expert with this tool! Good on you!
 
 [Back To The Top](#pywid-csv)
 
