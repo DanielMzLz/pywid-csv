@@ -4,8 +4,6 @@ Two tools to graph, sort and parse through CSV files. Specifically designed arou
 ---
 
 ## Table of Contents
-You're sections headers will be used to reference location of destination.
-
 - [Description](#description)
 - [How to Use](#how-to-use)
     - [Requirements](#requirements)
