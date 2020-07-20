@@ -96,12 +96,12 @@ Now we know that there is no linear correlation between these two variables! But
 
 ```html
 python3 pywid-graph aged_65_older total_deaths --include_label location
+```
 
 <p align="center">
     <img src=https://user-images.githubusercontent.com/39423011/87977477-6bc0f600-ca94-11ea-9586-6b1c570b1c0c.png width="350" title="graph.png">
 </p>
 
-```
 [Back To The Top](#pywid-csv)
 
 ---
