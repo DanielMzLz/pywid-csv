@@ -200,13 +200,16 @@ The location of these results can be modified by doing:
 python3 pywid-parse.py location date total_cases total_deaths --sort iso_code USA -O my_new_file.csv
 ```
 
+Not too hard to grasp, right?
+
 [Back To The Top](#pywid-csv)
 
 ---
 
 ## Notes
 - Importing a file will handle exactly the same as if the default file was imported, it'll just utilize the different source.
-- If 
+- If one of the retrieved values is completely empty, both the parser and the grapher will automatically exclude it.
+
 [Back To The Top](#pywid-csv)
 
 ---
