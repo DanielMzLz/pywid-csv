@@ -95,12 +95,44 @@ That'll return something like this:
 Now we know that there is no linear correlation between these two variables! But who's that one guy really far on the right? Let's label the points to find out!
 
 ```html
-python3 pywid-graph aged_65_older total_deaths --include_label location
+python3 pywid-graph aged_65_older total_deaths --include_label iso_code
 ```
 
 <p align="center">
-    <img src=https://user-images.githubusercontent.com/39423011/87977477-6bc0f600-ca94-11ea-9586-6b1c570b1c0c.png width="350" title="graph.png">
+    <img src=https://user-images.githubusercontent.com/39423011/87980158-ba708f00-ca98-11ea-94b0-e1dd00bd8e03.png width="350" title="graph.png">
 </p>
+
+With this information, we can now tell that it is Japan that has the highest percentage of people aged 65 or older in the world! Even so, they have still been able to maintain a low amount of total deaths. Let's try and analyze how Japan has faired when compared to the entirety of the world:
+
+```html
+python3 pywid-graph aged_65_older total_deaths --include_label iso_code --world
+```
+
+<p align="center">
+    <img src=https://user-images.githubusercontent.com/39423011/87981075-39b29280-ca9a-11ea-99db-b68016965874.png width="350" title="graph.png">
+</p>
+
+We can see that Japan is minimized even more when the entirety of the world is factored in. Cool! Let's try and analyze how the landscape looked during the early stages of the pandemic, say the second of February. 
+
+```html
+python3 pywid-graph aged_65_older total_deaths --include_label iso_code --world --sort date 2020-02-02
+```
+
+<p align="center">
+    <img src=https://user-images.githubusercontent.com/39423011/87981398-d1b07c00-ca9a-11ea-84f9-21dcf1f16c3c.png width="350" title="graph.png">
+</p>
+
+Here we can appreciate a very different landscape. China leads the majority of the unfortunate passings, while their prevalence seems to be rising in Iran, Korea, and Italy; Japan seems to remain unchanged, but we can be sure that they haven't been unaffected by the pandemic. Let's take a closer look at how they have faired through the pandemic by changing our sorting type. Of course, we should change the x-axis to reflect change over time (dates), and we can remove the world from the graph. We could also declutter the graph from the labels, as it is obvious every point will be labeled as Japan; alternatively, we could label the points with the respective dates. We will do the former:
+
+```html
+python3 pywid-graph date total_deaths --sort iso_code JPN
+```
+
+<p align="center">
+    <img src=https://user-images.githubusercontent.com/39423011/87982635-b2b2e980-ca9c-11ea-8a4b-46fa2ac205f6.png width="350" title="graph.png">
+</p>
+
+We can 
 
 [Back To The Top](#pywid-csv)
 
