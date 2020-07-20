@@ -8,7 +8,9 @@ You're sections headers will be used to reference location of destination.
 
 - [Description](#description)
 - [How to Use](#how-to-use)
+    - [Requirements](#requirements)
     - [pywid-graph](#pywid-graph)
+    - [pywid-parse](#pywid-parse)
 - [References](#references)
 - [License](#license)
 - [Author Info](#author-info)
