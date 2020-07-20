@@ -209,6 +209,7 @@ Not too hard to grasp, right?
 ## Notes
 - Importing a file will handle exactly the same as if the default file was imported, it'll just utilize the different source.
 - If one of the retrieved values is completely empty, both the parser and the grapher will automatically exclude it.
+- Also, I'm pretty noob at all of this. If you have any recommendations, questions or comments, please do send them to me at daniel2002munoz@gmail.com!
 
 [Back To The Top](#pywid-csv)
 
