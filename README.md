@@ -138,7 +138,7 @@ Now, we can see that Japan did struggle at first with the pandemic, but has been
 This is all very interesting and everything, but we haven't been saving any of these graphs for later use! Let's do that with ```-O```. Let's also specify a name for this graph.
 
 ```html
-python3 pywid-graph date total_deaths --sort iso_code JPN -O japans-responje.png
+python3 pywid-graph date total_deaths --sort iso_code JPN -O japans-response.png
 ```
 
 With that, you have become an expert with this tool! Good on you!
