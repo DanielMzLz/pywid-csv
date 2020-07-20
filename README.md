@@ -13,7 +13,7 @@ You're sections headers will be used to reference location of destination.
     - [pywid-parse](#pywid-parse)
 - [Notes](#notes)
 - [License](#license)
-- [Author Info](#author-info)
+- [How You Can Help](#how-you-can-help)
 
 ---
 
@@ -237,9 +237,19 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ---
 
-## Author Info
+## How You Can Help
+If possible, consider supporting to one of the following causes:
+- [Our World in Data](https://ourworldindata.org/donate)
+- [Federal Emergency Management Agency](https://www.fema.gov/coronavirus/how-to-help)
+- [The National Domestic Workers' Alliance](https://secure.actblue.com/donate/coronavirus-care-fund?refcode=covidfundwebpage)
 
-- Twitter - [@jamesqquick](https://twitter.com/jamesqquick)
-- Website - [James Q Quick](https://jamesqquick.com)
+If you are unable to donate money, consider donating blood or plasma to one of the following organizations or your local bank.
+- [Advancing Transfusion and Cellular Therapies Worldwide](http://www.aabb.org/tm/donation/Pages/Blood-Bank-Locator.aspx)
+- [American Red Cross](https://www.redcrossblood.org/donate-blood/dlp/plasma-donations-from-recovered-covid-19-patients.html#donorform)
+
+
+Remember to stay safe, use face masks and keep 1.5 meters of distance between people. Still, remember also to show love to the people you care about in ways that are safe for both. We **will** get out of this one, together.
+
+
 
 [Back To The Top](#pywid-csv)
