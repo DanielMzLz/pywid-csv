@@ -7,7 +7,7 @@ Two tools to graph, sort and parse through CSV files. Specifically designed arou
 You're sections headers will be used to reference location of destination.
 
 - [Description](#description)
-- [How To Use](#how-to-use)
+- [Requirements](#how-to-use)
 - [References](#references)
 - [License](#license)
 - [Author Info](#author-info)
@@ -38,7 +38,7 @@ Matplotlib and you're ready to start graphing!
 ```html
     pip3 install matplotlib
 ```
-
+That is, assuming you already have ```python3``` and ```pip3``` installed.
 
 #### Usage
 
