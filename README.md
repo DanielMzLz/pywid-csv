@@ -55,11 +55,11 @@ optional arguments:
   -h, --help            show this help message and exit
   -I <label>, --include_label <label>
                         Choose an extra field to label the points.
+  -S <type> <filter>, --sort <type> <filter>
+                        Sorting method to be used. Default is 'date today.'
   -F <file>, --file <file>
                         Use a local file instead of the repository.
   -W, --world           Include world in results.
-  -S <type> <filter>, --sort <type> <filter>
-                        Sorting method to be used. Default is 'date today.'
   -O [file], --output [file]
                         Output the graph to a file, in PNG format.
 
@@ -76,6 +76,7 @@ Recommended sorting methods are:
 - To help you change the underlying functionality of the grapher, you can utilize the ```--sort``` arguments. By default, the graph will retrieve entries by date and those that match today's date. To change whichever day you wish to match, say, you want to match the first of January 2020, you'd do ```--sort date 2020-01-01```. To change from date altogether and graph the values of a specific country, you'd do ```--sort iso_code USA```. These two are the recommended sorting methods, but there are no restrictions on what can classify as a sorting method. The sorting itself hinges on the ```type``` value matching the given ```filter``` for each entry.
 - As mentioned, this tool can also utilize other CSV files, with the help of the ```-F``` argument. 
 - The "World" entry is naturally excluded for every graph. If one wishes to override this behavior, it can be done so with the help of the ```-W``` argument.
+- ```-O``` is used to output the graph into a PNG file. The default name will be ```graph.png```, but this can be modified.
 
 [Back To The Top](#pywid-csv)
 
