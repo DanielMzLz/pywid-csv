@@ -41,7 +41,7 @@ Matplotlib and you're ready to start graphing!
 ```
 That is, assuming you already have ```python3``` and ```pip3``` installed.
 
-### pywid-graph.py
+### pywid-graph
 
 Let's take a look at the respective ```--help``` pages, shall we?
 
