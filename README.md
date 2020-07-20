@@ -19,7 +19,7 @@ You're sections headers will be used to reference location of destination.
 
 ## Description
 
-This repo comes with two tools: ```pywid-graph.py``` and ```pywid-parse.py```.
+This repo comes with two tools: ```pywid-graph.py``` and ```pywid-parse.py```. Both tools will automatically retrieve the OWID CSV from their repo (https://github.com/owid/covid-19-data/tree/master/public/data), but options allow for the use of local files, even those that have no relation to the OWID project.
 
 ### pywid-graph.py
 
@@ -176,7 +176,7 @@ Recommended sorting methods are:
 - ```-O``` is used to change the name of the output file. If not specified, it will be saved as ```owid_simplified.csv```.
 
 #### Examples
-
+This tool really is meant to extract specific values out of any CSV, with special accomodations for the OWID CSV.
 
 [Back To The Top](#pywid-csv)
 
