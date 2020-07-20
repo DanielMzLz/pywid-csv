@@ -16,12 +16,16 @@ You're sections headers will be used to reference location of destination.
 
 ## Description
 
+This repo comes with two tools: ```pywid-graph.py``` and ```pywid-parse.py```.
+
+#### pywid-graph.py
+
 This tool was created to facilitate the process of graphing two variables from the "Our World in Data" COVID-19 .csv reports. It comes with a plethora of options and parameters that allow for further customization of the output graph. With this tool, you could (for example) quickly visualize the effect of COVID-19 on every country as of today, or visualize the effect on a specific country through time.
 
-#### Technologies
+#### pywid-parse.py
 
-- Technology 1
-- Technology 2
+This tool can help you simplify OWID's .csv reports. Select any amount of the header variables to pass to the new output file. Like the grapher, it comes with several options to help you include exactly what you want to include.
+
 
 [Back To The Top](#pywid-csv)
 
@@ -66,12 +70,12 @@ Recommended sorting methods are:
   iso_code      [iso]
 
 ```
-[Back To The Top](#read-me-template)
+[Back To The Top](#pywid-csv)
 
 ---
 
 ## References
-[Back To The Top](#read-me-template)
+[Back To The Top](#pywid-csv)
 
 ---
 
@@ -99,7 +103,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#pywid-csv)
 
 ---
 
@@ -108,4 +112,4 @@ SOFTWARE.
 - Twitter - [@jamesqquick](https://twitter.com/jamesqquick)
 - Website - [James Q Quick](https://jamesqquick.com)
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#pywid-csv)
