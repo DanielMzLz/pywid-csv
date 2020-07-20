@@ -3,7 +3,7 @@ Two tools to graph, sort and parse through CSV files. Specifically designed arou
 
 ---
 
-### Table of Contents
+## Table of Contents
 You're sections headers will be used to reference location of destination.
 
 - [Description](#description)
@@ -73,7 +73,7 @@ Recommended sorting methods are:
 
 - ```pywid-graph.py``` expects exactly two fields to be entered as argument A, so that each field can correspond to an x or y axis. 
 - An additional field can be entered as a ```-I```, an independent label for each of the points graphed. 
-- To help you change the underlying functionality of the grapher, you can utilize the ```--sort``` arguments. By default, the graph will retrieve entries by date and those that match today's date. To change 
+- To help you change the underlying functionality of the grapher, you can utilize the ```--sort``` arguments. By default, the graph will retrieve entries by date and those that match today's date. To change whichever day you wish to match, say, you want to match the first of January 2020, you'd do ```--sort date 2020-01-01```. To change from date altogether and graph the values of a specific country, you'd do ```--sort iso_code USA```. These two are the recommended sorting methods, but there are no restrictions on what can classify as a sorting method. The sorting itself hinges on the ```type``` value matching the given ```filter``` for each entry.
 - As mentioned, this tool can also utilize other CSV files, with the help of the ```-F``` argument. 
 - The "World" entry is naturally excluded for every graph. If one wishes to override this behavior, it can be done so with the help of the ```-W``` argument.
 
