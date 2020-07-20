@@ -80,6 +80,13 @@ Recommended sorting methods are:
 - The "World" entry is naturally excluded for every graph. If one wishes to override this behavior, it can be done so with the help of the ```-W``` argument.
 - ```-O``` is used to output the graph into a PNG file. The default name will be ```graph.png```, but this can be modified.
 
+#### Examples
+
+So, let's start with the basics: Suppose you wish to analyze the worldwide relationship between the percentage of populations that are aged 65 or older and the total amount of deaths. With ```pywid-graph.py```, you'd do:
+```html
+python3 pywid-graph aged_65_older total_deaths
+```
+
 [Back To The Top](#pywid-csv)
 
 ---
