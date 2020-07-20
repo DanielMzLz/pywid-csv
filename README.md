@@ -40,11 +40,10 @@ Matplotlib and you're ready to start graphing!
 ```
 That is, assuming you already have ```python3``` and ```pip3``` installed.
 
-#### Usage
+#### pywid-graph.py
 
 Let's take a look at the respective ```--help``` pages, shall we?
 
-#### pywid-graph.py
 ```html
 usage: python3 pywid-graph.py A [options]
 
@@ -70,6 +69,12 @@ Recommended sorting methods are:
   date          <yyyy-mm-dd OR 'today'>
   iso_code      <iso>
 ```
+
+```pywid-graph.py``` expects exactly two fields to be entered as argument A, so that each field can correspond to an x or y axis. 
+An additional field can be entered as a ```-I```, an independent label for each of the points graphed. 
+To help you change the underlying functionality of the grapher, we have the ```--sort``` arguments. By default, 
+As mentioned, this tool can also utilize other CSV files, with the help of the ```-F``` argument. 
+The "World" row is naturally excluded for every graph. If one wishes to override this behavior, it can be done so with the help of the ```-W``` argument.
 
 [Back To The Top](#pywid-csv)
 
